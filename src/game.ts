@@ -1,17 +1,17 @@
 import 'phaser';
-import {Scene1 } from './scene/Scene1';
-import {Scene2 } from './scene/Scene2';
+import {BootScene } from './scene/BootScene';
+import {MainMenu } from './scene/MainMenu';
 
 let config = {
     type: Phaser.AUTO,
-    width: 1000,
-    height: 667,
+    width: window.innerWidth, //1000
+    height: 950, //667
     background: "0x000000",
     title: "Test Project",
     physics: {
         default: 'arcade'
     },
-    scene: [Scene1, Scene2]
+    scene: [BootScene, MainMenu]
 }
 
 let game = new Phaser.Game(config);

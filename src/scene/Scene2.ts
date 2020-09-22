@@ -1,5 +1,3 @@
-import { config } from "../game";
-
 class Scene2 extends Phaser.Scene {
     
     constructor() {

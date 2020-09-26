@@ -7,7 +7,7 @@ class BootScene extends Phaser.Scene {
     preload() {
         this.load.image("background", '../../assets/background.jpg');
         this.load.image("playBackground", '../../assets/playBackground.jpg');
-        this.load.spritesheet("bird", '../../assets/bird.png');
+        this.load.image("plane", '../../assets/plane.png');
     }
 
     create() {
@@ -26,7 +26,7 @@ class BootScene extends Phaser.Scene {
         }, 300)
 
         setTimeout(() => {
-            this.scene.start("playScene");
+            this.scene.start("mainMenu");
         }, 400);
     }
 }

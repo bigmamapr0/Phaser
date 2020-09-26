@@ -1,6 +1,6 @@
 class Quit extends Phaser.Scene {
     constructor() {
-        super("quitScene");
+        super("quit");
     }
 }
 

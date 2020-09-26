@@ -3,7 +3,6 @@ import { BackgroundGraphics } from "../../graphics/background";
 
 class Play extends Phaser.Scene {
     private background: BackgroundGraphics;
-    private score: number = 0;
 
     constructor() {
         super("playScene");
